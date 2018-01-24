@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="model.hibernate.TreeNodeV2" table="tree_nodeV2" catalog="treasy_db">
+        <id name="id" type="java.lang.Integer">
+            <column name="ID" />
+            <generator class="identity" />
+        </id>
+        <property name="code" type="java.lang.String">
+            <column name="CODE" not-null="true"/>
+        </property>
+        <property name="description" type="java.lang.String">
+            <column name="DESCRIPTION" not-null="true"/>
+        </property>
+        <property name="detail" type="java.lang.String">
+            <column name="DETAIL" not-null="true" />
+        </property>
+        <property name="parent" type="java.lang.Integer">
+            <column name="PARENT" not-null="false" />
+        </property>
+        <property name="lft" type="java.lang.Integer">
+            <column name="LFT" not-null="false" />
+        </property>
+        <property name="rgt" type="java.lang.Integer">
+            <column name="RGT" not-null="false" />
+        </property>
+    </class>
+</hibernate-mapping>
