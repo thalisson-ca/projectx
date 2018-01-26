@@ -3,7 +3,7 @@
 "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 
 <hibernate-mapping>
-    <class name="model.hibernate.TreeNodeV2" table="tree_nodeV2" catalog="treasy_db">
+    <class name="model.hibernate.TreeNodeV2" table="tree_nodeV2" catalog="x">
         <id name="id" type="java.lang.Integer">
             <column name="ID" />
             <generator class="identity" />
